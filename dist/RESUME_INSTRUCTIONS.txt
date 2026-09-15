@@ -1,0 +1,11 @@
+Put your actual resume PDF in this folder and name it exactly:
+
+    resume.pdf
+
+Full path should be:  public/resume.pdf
+
+Once it's here, delete this instructions file — it's just a placeholder
+reminder and won't affect the site if you leave it, but it's tidier gone.
+
+The "Download Resume" buttons across the site already point to /resume.pdf,
+so no code changes are needed once the file is in place.
