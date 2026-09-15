@@ -1,0 +1,46 @@
+.summary {
+  padding: 0 0 clamp(40px, 6vw, 64px);
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.summary-card {
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.summary-card:hover {
+  border-color: var(--border-strong);
+}
+
+.summary-icon {
+  color: var(--accent);
+}
+
+.summary-title {
+  font-size: 15px;
+}
+
+.summary-desc {
+  color: var(--text-muted);
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+
+@media (max-width: 900px) {
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,21 @@
+.exploring-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.exploring-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 9px 15px;
+  border-radius: 999px;
+}
+
+.exploring-item svg {
+  color: var(--accent);
+}

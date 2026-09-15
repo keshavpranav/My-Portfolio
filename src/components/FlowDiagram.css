@@ -1,0 +1,34 @@
+.flow-diagram {
+  padding: 28px 20px 20px;
+  overflow-x: auto;
+}
+
+.flow-diagram-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  min-width: 640px;
+}
+
+.flow-node-label {
+  font-size: 14px;
+  font-weight: 500;
+  fill: var(--text);
+}
+
+.flow-node-sub {
+  font-size: 10.5px;
+  fill: var(--text-muted);
+}
+
+.flow-node-label-sm {
+  font-size: 12px;
+  font-weight: 500;
+  fill: var(--text-muted);
+}
+
+.flow-node-sub-sm {
+  font-size: 9.5px;
+  fill: var(--text-faint);
+}
+

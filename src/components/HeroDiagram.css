@@ -1,0 +1,81 @@
+.hero-diagram {
+  width: 100%;
+  max-width: 340px;
+  margin-left: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(145deg, var(--surface), var(--surface-2));
+  padding: 12px 20px;
+  box-shadow: 18px 18px 0 rgba(255, 180, 84, 0.08);
+}
+
+.hero-diagram-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-diagram-label {
+  font-family: var(--font-display);
+  font-size: 13.5px;
+  font-weight: 700;
+  fill: var(--text);
+}
+
+.hero-diagram-sub {
+  font-size: 10.5px;
+  fill: var(--text-muted);
+}
+
+.hero-diagram-node {
+  opacity: 0;
+  transform: translateX(-6px);
+  transform-box: fill-box;
+  transform-origin: left center;
+  animation: hd-node-in 0.5s ease forwards;
+}
+
+@keyframes hd-node-in {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hero-diagram-pulse {
+  animation: hd-pulse 3.6s ease-in-out 1s infinite;
+}
+
+@keyframes hd-pulse {
+  0% {
+    cy: 36;
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 1;
+  }
+  100% {
+    cy: 420;
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-diagram-node {
+    opacity: 1;
+    transform: none;
+  }
+  .hero-diagram-pulse {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-diagram {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
